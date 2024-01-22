@@ -115,3 +115,18 @@ h3::after{
     /* border: 1px solid white; */
 
   }
+
+
+
+  @media  screen and (max-width:425px) {
+    .card{
+        width: 300px;
+    }
+    h3{
+        font-size: 23px;
+    }
+    #joke,#author{
+        font-size: 25px;
+    }
+    
+  }
