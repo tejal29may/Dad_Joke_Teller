@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card{
+    width: 700px;
+    /* height: 300px; */
+    border: 5px solid rgb(51, 189, 97);
+    margin: 5% auto;
+    border-radius: 16px;
+    padding: 40px;
+    text-align: center;
+}
+h3{
+    text-align: center;
+    font-size: 32px;
+    /* margin-top: 5%; */
+    margin-bottom: 40px;
+    position: relative;
+}
+h3::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: rgb(51, 189, 97);
+    bottom: -10px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+}
+#joke{
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 10px;
+    /* min-height: 110px; */
+}
+#author{
+    text-align: center;
+    font-size: 26px;
+   /* display: block; */
+   position: relative;
+    /* margin-top: 10px; */
+}
+#joke::after,#joke::before{
+    content: '"';
+}
+/* #author::before{
+    content: '';
+    height:2px ;
+    width: 20px;
+    background-color: rgb(23, 124, 229);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+} */
+#buttons{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+#buttons button{
+    /* background-color: rgb(23, 124, 229); */
+    background-color: rgb(51, 189, 97);
+    color: black;
+    font-size: 15px;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+    border: 3px solid rgb(57, 218, 110);
+}
+#buttons img{
+    width: 30px;
+    /* height: 30px; */
+    margin-right: 10px;
+    /* background: transparent; */
+}
+#buttons button:nth-child(2){
+    background: transparent;
+    color: #333;
+}
+
+
+.toggle{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#toggle{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+    border: 3px solid black;
+    margin-top: 5%;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+    /* border: 1px solid white; */
+
+  }
